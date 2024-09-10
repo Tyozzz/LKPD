@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* 
+{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #7c7b7b;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(114, 113, 113);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 0cm;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(114, 113, 113);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(114, 113, 113);
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+img {
+  border: 5px solid #555;
+}
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  border-image: 5px solid #000000;
+}
+
+/* Right column */
+img {
+  border: 5px solid #000000;
+}
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: rgb(114, 113, 113);
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color:  rgb(114, 113, 113);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body{
+        background-color: rgb(198, 201, 204);
+    }
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(114, 113, 113);
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+</style>
+</head>
+<body align="center">
+
+<div class="header">
+  <h1>My Website</h1>
+  <p>Website Pertamaku</p>
+</div>
+
+<div class="topnav">
+  <a href="https://www.tiktok.com/@tyozz_z?_r=1&_d=e7ffke6dj8kh1i&sec_uid=MS4wLjABAAAALpHJbwZtCEBVBNGP0u9JBOOaeyrkTWNDH1AkooCCn7vEve2aNwZWDblaHuHKIxeJ&share_author_id=6854749157590238210&sharer_language=id&source=h5_t&u_code=ddi5fkcf21cheh&timestamp=1725943339&user_id=6854749157590238210&sec_user_id=MS4wLjABAAAALpHJbwZtCEBVBNGP0u9JBOOaeyrkTWNDH1AkooCCn7vEve2aNwZWDblaHuHKIxeJ&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7410966463497324293&share_link_id=c8f88581-fb25-4b00-a58f-e6780f5f39f5&share_app_id=1180&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1">TIKTOK</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>CERITA SAYA</h2>
+      <div class="fakeimg" style="height:200px;"><img src="c:\Users\ACER\Pictures\WhatsApp Image 2023-11-24 at 15.27.50_c4c70cce.jpg" height="170" widht="1" style="border: 5px #333;"></div>
+      <p>Foto ini saat saya pelantikan,dan dimana saat itu saya sangat bahagia sekali karna pelantikan adalah hari yang di tunggu-tunggu oleh catar-catir.</p>
+    </div>
+    <div class="card">
+      <h2>CERITA SAYA</h2>
+      <div class="fakeimg" style="height:350px;"><img src="c:\Users\ACER\Pictures\WhatsApp Image 2023-11-25 at 20.35.39_f0bd755f.jpg"height="300"></div>
+      <p>No coment.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>VIDEO CORE</h2>
+      <div class="fakeimg" style="height:310px;"><video widt="" height="300" controls>
+        <source src="c:\Users\ACER\Pictures\BAKTI SAKA.mp4">
+    </video></div>
+      
+    </div>
+    <div class="card">
+      <h3>MY WAIFU</h3>
+      <div class="fakeimg"><p><img src="c:\Users\ACER\Pictures\mikasa.jpg"height="150"></p></div>
+      
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <a href="http://instagram.com"><img src="c:\Users\ACER\Pictures\ig.jpg" width="25" align="center">tyooz_zz
+    </div>
+  </div>
+</div>
+<h1>BIODATA SATRIO</h1>
+<div class="grid-container">
+  <div class="item1">NAMA:SATRIO NUGROHO</div>
+  <div class="item2">UMUR:16</div>
+  <div class="item3">TTGL:Subang,18,Mei,2024</div>  
+  <div class="item4">HOBI:Olahraga dan Maen game</div>
+  <div class="item5">SEKOLAH:SMKN 2 SUBANG</div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
